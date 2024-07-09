@@ -33,7 +33,7 @@ describe('TodoListPage', () => {
 
     renderWithProviders(<TodoListPage />, { reduxState: initialState });
 
-    expect(screen.getByText(/Redux CRUD Todo app/i)).toBeInTheDocument();
+    expect(screen.getByText(/List todo/i)).toBeInTheDocument();
     expect(screen.getByPlaceholderText(/Search/i)).toBeInTheDocument();
     expect(screen.getByText(/Add todo/i)).toBeInTheDocument();
   });
