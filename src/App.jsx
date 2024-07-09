@@ -12,10 +12,10 @@ const App = () => {
     <Router>
     <NavigationBar />
     <Routes>
-      <Route exact path="/" element={<TodoHomePage />} />
-      <Route path="/add-todo" element={<TodoAddPage />}/>
-      <Route path="/edit-todo/:id" element={<TodoEditPage />}/>
-      <Route path="/list-todo" element={<TodoListPage />}/>
+      <Route exact path="/react-todo/" element={<TodoHomePage />} />
+      <Route path="/react-todo/add-todo" element={<TodoAddPage />}/>
+      <Route path="/react-todo/edit-todo/:id" element={<TodoEditPage />}/>
+      <Route path="/react-todo/list-todo" element={<TodoListPage />}/>
     </Routes>
   </Router>
   );

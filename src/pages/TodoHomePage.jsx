@@ -12,7 +12,7 @@ const HomePage = () => {
           <Card.Text>
             Ready to conquer your tasks? Or at least think about conquering them? Click below!
           </Card.Text>
-          <Button variant="primary" size="lg" href="/list-todo">
+          <Button variant="primary" size="lg" href="/react-todo/list-todo">
             Show me the Todos!
           </Button>
         </Card.Body>
