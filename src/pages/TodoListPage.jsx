@@ -35,7 +35,7 @@ export function TodoListPage() {
   return (
     <Container>
       <Row>
-        <h1>Redux CRUD Todo app</h1>
+        <h1>List todo</h1>
       </Row>
       <Row className="align-items-center mb-3">
         <Col xs={12} sm={6} className="d-flex">
