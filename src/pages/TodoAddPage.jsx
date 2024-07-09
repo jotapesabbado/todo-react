@@ -17,8 +17,7 @@ export function TodoAddPage() {
   const handleTitleChange = (e) => setTitle(e.target.value);
   const handleCompletedChange = (e) => setCompleted(e.target.checked);
 
-  // const todosAmount = useSelector((state) => state.todos.entities.length);
-  const todosAmount = 300; // fixed value for mock using jsonplaceholder
+  const todosAmount = useSelector((state) => state.todos.entities.length) + 100;
 
   const handleClick = () => {
     if (title) {
