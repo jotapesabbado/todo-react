@@ -9,13 +9,13 @@ import { TodoListPage } from "./pages/TodoListPage";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/todo-react/">
     <NavigationBar />
     <Routes>
-      <Route exact path="/todo-react/" element={<TodoHomePage />} />
-      <Route path="/todo-react/add-todo" element={<TodoAddPage />}/>
-      <Route path="/todo-react/edit-todo/:id" element={<TodoEditPage />}/>
-      <Route path="/todo-react/list-todo" element={<TodoListPage />}/>
+      <Route exact path="/" element={<TodoHomePage />} />
+      <Route path="/add-todo" element={<TodoAddPage />}/>
+      <Route path="/edit-todo/:id" element={<TodoEditPage />}/>
+      <Route path="/list-todo" element={<TodoListPage />}/>
     </Routes>
   </Router>
   );

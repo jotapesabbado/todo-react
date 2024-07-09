@@ -8,8 +8,8 @@ import { TodoForm } from "../components/TodoForm";
 
 export function TodoEditPage() {
   const { pathname } = useLocation();
-  const todoId = parseInt(pathname.replace("/todo-react/edit-todo/", ""));
-
+  const todoId = parseInt(pathname.replace("/edit-todo/", ""));
+  
   const todo = useSelector((state) =>
     state.todos.entities.find((todo) => todo.id === todoId)
   );
@@ -18,6 +18,7 @@ export function TodoEditPage() {
   const navigate = useNavigate();
 
   const [title, setTitle] = useState(todo.title);
+
   const [completed, setCompleted] = useState(todo.completed);
   const [error, setError] = useState(null);
 
@@ -35,7 +36,7 @@ export function TodoEditPage() {
       );
 
       setError(null);
-      navigate("/todo-react/list-todo");
+      navigate("/list-todo");
     } else {
       setError("Fill in all fields");
     }

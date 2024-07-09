@@ -39,7 +39,7 @@ export function TodoListPage() {
       </Row>
       <Row className="align-items-center mb-3">
         <Col xs={12} sm={6} className="d-flex">
-          <Link to="/todo-react/add-todo">
+          <Link to="/add-todo">
             <Button className="button-primary me-2">Add todo</Button>
           </Link>
           <Form.Group>

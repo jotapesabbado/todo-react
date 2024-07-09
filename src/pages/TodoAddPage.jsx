@@ -30,7 +30,7 @@ export function TodoAddPage() {
       );
 
       setError(null);
-      navigate("/todo-react/list-todo");
+      navigate("/list-todo");
     } else {
       setError("Fill in all fields");
     }
