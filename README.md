@@ -1,7 +1,3 @@
-You're right! Let's include a section about `store.jsx` in the README. Here is the updated version:
-
----
-
 # Todo App
 
 This is a Todo list application built with React, Redux, and Vite. This README provides information on how to set up, develop, test, and build the project.
