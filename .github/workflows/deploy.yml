@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Build project
+      - name: Test project
         run: npm run test
 
   build:
