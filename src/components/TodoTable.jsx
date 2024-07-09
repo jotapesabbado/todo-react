@@ -36,7 +36,7 @@ function TodoTable({ entities, searchQuery, startIndex, ITEMS_PER_PAGE, handleDe
               </td>
               <td>
                 <Button onClick={() => handleDelete(id)}>Delete</Button>
-                <Link to={`/react-todo/edit-todo/${id}`}>
+                <Link to={`/todo-react/edit-todo/${id}`}>
                   <Button style={{ marginLeft: "10px" }}>Edit</Button>
                 </Link>
               </td>
